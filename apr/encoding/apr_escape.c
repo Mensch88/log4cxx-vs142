@@ -27,7 +27,7 @@
 
 #include "apr_escape.h"
 #include "apr_escape_test_char.h"
-#include "apr_encode_private.h"
+#include "private/apr_encode_private.h"
 #include "apr_lib.h"
 #include "apr_strings.h"
 
