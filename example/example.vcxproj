@@ -56,6 +56,7 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="Shared">
+    <Import Project="..\log4cxx-wrap\log4cxx-wrap.vcxitems" Label="Shared" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -90,7 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);LOG4CXX_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\log4cxx\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,8 +141,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\log4cxx\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,20 +159,6 @@
     <Xml Include="log4j.xml">
       <DeploymentContent>true</DeploymentContent>
     </Xml>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\msvc15\apr.vcxproj">
-      <Project>{705a869d-5ae7-4281-abca-081f842e2237}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\msvc15\aprutil.vcxproj">
-      <Project>{fb49065a-4f57-47cf-b28c-ab7cfd0bf84f}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\msvc15\log4cxx.vcxproj">
-      <Project>{24d2d608-22e9-42ef-960b-15a900e6ad16}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\msvc15\xml.vcxproj">
-      <Project>{055e5bcc-c917-4ece-8c76-d81b3dbae6eb}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

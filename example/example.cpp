@@ -4,10 +4,7 @@
 #pragma comment(lib, "Rpcrt4.lib")
 
 // include log4cxx header files.
-#include "log4cxx/logger.h"
-#include "log4cxx/basicconfigurator.h"
-#include "log4cxx/helpers/exception.h"
-#include "log4cxx/ndc.h"
+#include <log4cxx.h>
 
 #include <chrono>
 

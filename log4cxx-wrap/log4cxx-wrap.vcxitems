@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{03c224aa-5d36-412b-9087-fd1659340c91}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\appender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\appenderskeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\asyncappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\basicconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\config\propertysetter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\consoleappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\dailyrollingfileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\db\odbcappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\defaultconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\defaultloggerfactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\file.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\fileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\andfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\denyallfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\expressionfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\levelmatchfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\levelrangefilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\locationinfofilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\mapfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\propertyfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\filter\stringmatchfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\absolutetimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\appenderattachableimpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\aprinitializer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\bufferedoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\bufferedwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\bytearrayinputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\bytearrayoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\bytebuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\cacheddateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\charsetdecoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\charsetencoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\class.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\classregistration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\condition.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\cyclicbuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\datagrampacket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\datagramsocket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\date.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\dateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\datelayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\datetimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\exception.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\fileinputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\fileoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\filewatchdog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\inetaddress.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\inputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\inputstreamreader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\integer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\iso8601dateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\loader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\locale.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\loglog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\messagebuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\object.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\objectimpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\objectoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\objectptr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\onlyonceerrorhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\optionconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\outputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\outputstreamwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\pool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\properties.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\propertyresourcebundle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\reader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\relativetimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\resourcebundle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\serversocket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\simpledateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\socket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\socketoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\strftimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\strictmath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\stringhelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\stringtokenizer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\synchronized.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\syslogwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\system.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\systemerrwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\systemoutwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\tchar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\thread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\threadlocal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\threadspecificdata.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\timezone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\transcoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\transform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\writer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\helpers\xml.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\hierarchy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\htmllayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\layout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\level.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\log4cxx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\logger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\logmanager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\logstring.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\mdc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\ndc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\net\smtpappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\net\socketappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\net\socketappenderskeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\net\sockethubappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\net\syslogappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\net\telnetappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\net\xmlsocketappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\nt\nteventlogappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\nt\outputdebugstringappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\patternlayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\classnamepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\datepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\filedatepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\filelocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\formattinginfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\fulllocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\integerpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\levelpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\linelocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\lineseparatorpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\literalpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\loggerpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\loggingeventpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\messagepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\methodlocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\nameabbreviator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\namepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\ndcpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\patternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\patternparser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\propertiespatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\relativetimepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\threadpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\pattern\throwableinformationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\portability.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\private\log4cxx_private.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\propertyconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\provisionnode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rollingfileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\action.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\filerenameaction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\filterbasedtriggeringpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\fixedwindowrollingpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\gzcompressaction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\manualtriggeringpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\rollingfileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\rollingfileappenderskeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\rollingpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\rollingpolicybase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\rolloverdescription.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\sizebasedtriggeringpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\timebasedrollingpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\TriggeringPolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\rolling\zipcompressaction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\simplelayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\appenderattachable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\configurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\defaultrepositoryselector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\errorhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\Filter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\hierarchyeventlistener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\location\locationinfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\loggerfactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\loggerrepository.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\loggingevent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\optionhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\repositoryselector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\rootlogger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\spi\triggeringeventevaluator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\stream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\ttcclayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\varia\fallbackerrorhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\writerappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\xml\domconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\log4cxx\xml\xmllayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\appender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\appenderskeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\asyncappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\basicconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\config\propertysetter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\consoleappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\dailyrollingfileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\db\odbcappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\defaultconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\defaultloggerfactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\file.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\fileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\andfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\denyallfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\expressionfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\levelmatchfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\levelrangefilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\locationinfofilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\mapfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\propertyfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\filter\stringmatchfilter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\absolutetimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\appenderattachableimpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\aprinitializer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\bufferedoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\bufferedwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\bytearrayinputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\bytearrayoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\bytebuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\cacheddateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\charsetdecoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\charsetencoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\class.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\classregistration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\condition.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\cyclicbuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\datagrampacket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\datagramsocket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\date.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\dateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\datelayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\datetimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\exception.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\fileinputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\fileoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\filewatchdog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\inetaddress.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\inputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\inputstreamreader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\integer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\iso8601dateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\loader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\locale.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\loglog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\messagebuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\object.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\objectimpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\objectoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\objectptr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\onlyonceerrorhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\optionconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\outputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\outputstreamwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\pool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\properties.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\propertyresourcebundle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\reader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\relativetimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\resourcebundle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\serversocket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\simpledateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\socket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\socketoutputstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\strftimedateformat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\strictmath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\stringhelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\stringtokenizer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\synchronized.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\syslogwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\system.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\systemerrwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\systemoutwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\tchar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\thread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\threadlocal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\threadspecificdata.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\timezone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\transcoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\transform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\writer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\helpers\xml.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\hierarchy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\htmllayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\layout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\level.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\log4cxx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\logger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\logmanager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\logstring.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\mdc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\ndc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\net\smtpappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\net\socketappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\net\socketappenderskeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\net\sockethubappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\net\syslogappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\net\telnetappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\net\xmlsocketappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\nt\nteventlogappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\nt\outputdebugstringappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\patternlayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\classnamepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\datepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\filedatepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\filelocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\formattinginfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\fulllocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\integerpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\levelpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\linelocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\lineseparatorpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\literalpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\loggerpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\loggingeventpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\messagepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\methodlocationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\nameabbreviator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\namepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\ndcpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\patternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\patternparser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\propertiespatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\relativetimepatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\threadpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\pattern\throwableinformationpatternconverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\portability.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\private\log4cxx_private.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\propertyconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\provisionnode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rollingfileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\action.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\filerenameaction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\filterbasedtriggeringpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\fixedwindowrollingpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\gzcompressaction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\manualtriggeringpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\rollingfileappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\rollingfileappenderskeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\rollingpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\rollingpolicybase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\rolloverdescription.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\sizebasedtriggeringpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\timebasedrollingpolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\TriggeringPolicy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\rolling\zipcompressaction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\simplelayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\appenderattachable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\configurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\defaultrepositoryselector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\errorhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\Filter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\hierarchyeventlistener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\location\locationinfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\loggerfactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\loggerrepository.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\loggingevent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\optionhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\repositoryselector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\rootlogger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\spi\triggeringeventevaluator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\stream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\ttcclayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\varia\fallbackerrorhandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\writerappender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\xml\domconfigurator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log4cxx\xml\xmllayout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="$(MSBuildThisFileDirectory)apr.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)aprd.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)aprutil.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)aprutild.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)log4cxx.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)log4cxxd.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)xml.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)xmld.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+</Project>

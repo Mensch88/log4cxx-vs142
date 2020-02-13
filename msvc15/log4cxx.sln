@@ -21,8 +21,20 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xml", "xml.vcxproj", "{055E5BCC-C917-4ECE-8C76-D81B3DBAE6EB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example", "..\example\example.vcxproj", "{F366AF6D-CE88-42C6-872C-EDE090CF9D56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24D2D608-22E9-42EF-960B-15A900E6AD16} = {24D2D608-22E9-42EF-960B-15A900E6AD16}
+		{FB49065A-4F57-47CF-B28C-AB7CFD0BF84F} = {FB49065A-4F57-47CF-B28C-AB7CFD0BF84F}
+		{705A869D-5AE7-4281-ABCA-081F842E2237} = {705A869D-5AE7-4281-ABCA-081F842E2237}
+		{055E5BCC-C917-4ECE-8C76-D81B3DBAE6EB} = {055E5BCC-C917-4ECE-8C76-D81B3DBAE6EB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cxx-wrap", "..\log4cxx-wrap\log4cxx-wrap.vcxitems", "{03C224AA-5D36-412B-9087-FD1659340C91}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\log4cxx-wrap\log4cxx-wrap.vcxitems*{03c224aa-5d36-412b-9087-fd1659340c91}*SharedItemsImports = 9
+		..\log4cxx-wrap\log4cxx-wrap.vcxitems*{f366af6d-ce88-42c6-872c-ede090cf9d56}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
